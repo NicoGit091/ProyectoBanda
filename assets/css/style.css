@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,700,900');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+html {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 62.5%;
+}
+
+header {
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    color: white;
+    top: 0;
+    height: 6rem; /* RELACION BIENVENIDOS */
+}
+
+body {
+    background: #101010;
+    font-size: 1.6rem
+}
+
+/* HEADER */
+
+.logo h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nav {
+    list-style: none;
+}
+
+.nav .sub-nav-item {
+    display: inline-block;
+    position: relative;
+}
+
+.nav .sub-nav{
+    list-style: none;
+    display: none;
+    
+}
+
+.nav > a, nav li.sub-nav-item > a{
+    display: inline-block;
+    padding: 0rem 1rem;
+    line-height: 60px;
+    font-size: 1.6rem;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    transition: color .5s, background .5s;
+}
+
+.nav .sub-nav > a {
+    display: block;
+    padding: 0rem 1rem;
+    line-height: 6rem;
+    font-size: 1.6rem;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color .5s, background .5s;
+}
+
+.nav a:hover{
+    background: white;
+    color: #101010;
+}
+
+.sub-nav-item:hover .sub-nav {
+    display: block;
+    position: absolute;
+    left: 0;
+    padding: 0;
+    background-color: #000;
+    width: max-content;
+}
+
+/* BIENVENIDOS */
+
+#bienvenidos {
+    display: block;
+    width: 100%;
+    height: 400px;
+    margin-top: 6rem; /**/
+    padding: 1.5rem 0;
+    background: url(../img/image-header.jpg) center top no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#bienvenidos h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 6rem;
+    font-weight: bold;
+}
+
+.contenedor-down-arrow {
+    text-align: center;
+    bottom: 1.5rem;
+    width: 100%;
+}
+
+a.arrow i {
+    background: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    transition: transform .3s linear;
+    animation-name: down;
+    -webkit-animation-name: down;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+a.arrow:hover i {
+    background: transparent;
+    border: none;
+    color: white;
+    transform: rotate(360deg) scale(1.2);
+    transition: transform .3s ease-in-out;
+    
+}
+
+.contenedor-texto-init {
+    height: calc(400px - 78px);
+}
+
+/* ARTISTAS*/
+
+#artistas {
+    padding-top: 200px;
+}
+
+.avatar {
+    position: relative;
+}
+
+.avatar img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .4s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .avatar:hover img {
+    opacity: 0.3;
+  }
+  
+  .avatar:hover .middle {
+    opacity: 1;
+  }
+
+  h4{
+    padding: 1.5rem;
+    border: 1px solid white;
+    font-size: 2.2rem;
+    color: white;
+}
+
+
+/* MAQUETADO */
+
+.container {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.df-a-c {
+    align-items: center
+}
+
+.df-jc-sb { 
+    justify-content: space-between;
+}
+
+.col-md-3 {
+    width: 25%;
+    float: left;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.circulo img {
+    width: 100%;
+}
+
+/* MEDIAS */
+
+@media only screen and (max-width: 1000px) {
+    .logo h1 {
+        display: none;
+    }
+}
+
+@keyframes down {
+    0%, 100% {
+      margin-top: 0px;
+    }
+    50% {
+        margin-top: 10px;
+    }
+  }
