@@ -12,9 +12,10 @@ html {
 
 header {
     background-color: #000;
-    position: fixed;
     width: 100%;
     color: white;
+    position: fixed;
+    z-index: 1;    
     top: 0;
     height: 6rem; /* RELACION BIENVENIDOS */
 }
@@ -110,6 +111,12 @@ body {
     font-weight: bold;
 }
 
+#bienvenidos h3 {
+    font-size: 1.8rem;
+    color: white;
+    font-weight: bold;
+}
+
 .contenedor-down-arrow {
     text-align: center;
     bottom: 1.5rem;
@@ -146,11 +153,12 @@ a.arrow:hover i {
 /* ARTISTAS*/
 
 #artistas {
-    padding-top: 200px;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
 }
 
 .avatar {
-    position: relative;
+
 }
 
 .avatar img {
@@ -158,6 +166,7 @@ a.arrow:hover i {
     display: block;
     width: 100%;
     height: auto;
+    padding: 0 2rem;
     transition: .5s ease;
     backface-visibility: hidden;
   }
@@ -181,15 +190,35 @@ a.arrow:hover i {
     opacity: 1;
   }
 
-  h4{
+  h4{ 
     padding: 1.5rem;
-    border: 1px solid white;
+    border: 2px solid white;
     font-size: 2.2rem;
     color: white;
 }
 
 
+/* PARALAX DIVIDER*/
+
+.parallax { 
+    background: url(../img/image-header.jpg) no-repeat center center;
+    padding: 10rem;
+    text-align: center;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
 /* MAQUETADO */
+
+.titulo-seccion {
+    
+}
+
+.texto-avatar {
+    color: white;
+    font-size: 1.4rem;
+    padding: 2rem;
+}
 
 .container {
     padding-right: 1.5rem;
