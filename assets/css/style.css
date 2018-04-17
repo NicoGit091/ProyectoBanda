@@ -158,7 +158,7 @@ a.arrow:hover i {
 }
 
 .avatar {
-
+    position: relative;
 }
 
 .avatar img {
@@ -198,6 +198,23 @@ a.arrow:hover i {
 }
 
 
+/* CONTACTO */
+
+#contacto {
+    color: white;
+}
+
+.titulo-seccion {
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.sub-titulo-seccion {
+    padding-bottom: 1.5rem;
+}
+
 /* PARALAX DIVIDER*/
 
 .parallax { 
@@ -235,13 +252,6 @@ a.arrow:hover i {
     justify-content: space-between;
 }
 
-.col-md-3 {
-    width: 25%;
-    float: left;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-}
-
 .circulo img {
     width: 100%;
 }
@@ -251,6 +261,33 @@ a.arrow:hover i {
 @media only screen and (max-width: 1000px) {
     .logo h1 {
         display: none;
+    }
+
+    .nav {
+        display: none;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .parallax {
+        padding: 5rem;
+        background-attachment: fixed;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .cont-12{
+        display: flex;
+    }
+
+    .columna-6{
+        width: 50%;
+    }
+
+    .form-group{
+        padding: 0 10px;
     }
 }
 
