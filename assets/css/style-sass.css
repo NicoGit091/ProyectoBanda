@@ -1,0 +1,20 @@
+.no-padding, #contacto div.bloque {
+  padding: 0; }
+
+.font-size-1 {
+  font-size: 1.4rem; }
+
+.font-size-2 {
+  font-size: 1.6rem; }
+
+.font-size-3 {
+  font-size: 1.8rem; }
+
+.btn-twitter {
+  background-color: #55acee; }
+
+.btn-facebook {
+  background-color: #3a5795; }
+
+#contacto div.bloque {
+  background-color: #222326; }

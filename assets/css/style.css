@@ -275,6 +275,7 @@ a.arrow:hover i {
         padding: 5rem;
         background-attachment: fixed;
     }
+    
 }
 
 @media only screen and (min-width: 768px) {
@@ -289,6 +290,8 @@ a.arrow:hover i {
     .form-group{
         padding: 0 10px;
     }
+
+    
 }
 
 @keyframes down {
@@ -299,3 +302,5 @@ a.arrow:hover i {
         margin-top: 10px;
     }
   }
+
+  

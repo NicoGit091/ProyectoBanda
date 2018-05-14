@@ -1,0 +1,15 @@
+.no-padding {
+    padding: 0;
+}
+
+@each $name, $value in $fonts {
+    .font-#{$name} {
+        font-size: $value;
+    }
+}
+
+@each $name-color, $bgcolor in $colors-redes {
+    .btn-#{$name-color} {
+        background-color: $bgcolor;
+    }
+}
